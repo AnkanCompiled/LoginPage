@@ -1,18 +1,22 @@
+const SERVER = 'http://localhost:3000/'
+
+const serverError = document.getElementById('server_error')
+
+const usernameInput = document.getElementById('username')
 const usernameDiv = document.getElementById('username_div')
 const usernameError = document.getElementById('username_error')
-const usernameInput = document.getElementById('username')
+
 const emailInput = document.getElementById('email')
 const passwordInput = document.getElementById('password')
 const submitButton = document.querySelector('input[type="submit"]')
-
-
 
 let usernameValidation = false
 let emailValidation = false
 let passwordValidation = false
 
 async function getData(){
-    const res = await fetch('http://localhost:3000/')
+    const res = await fetch(SERVER)
+    console.log(res.status)
     return res.json()
 }
 

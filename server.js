@@ -11,16 +11,17 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+
 async function connect(Database = 'Projects', Collection = 'LoginDataBase') {
-    try{
-        const mongoConnect = await client.connect()
-        const mongoDatabase = await mongoConnect.db(Database)
-        const mongoCollection = await mongoDatabase.collection(Collection)
-        return mongoCollection
-    }
-    catch{
-        return []
-    }
+    const mongoConnect = await client.connect((err)=>{
+        if (err){
+            console('Error')
+            return null
+        }
+    })
+    const mongoDatabase = await mongoConnect.db(Database)
+    const mongoCollection = await mongoDatabase.collection(Collection)
+    return mongoCollection
 }
 
 app

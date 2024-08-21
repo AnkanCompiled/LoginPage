@@ -1,5 +1,4 @@
 body {
-    display: flex;
     justify-content: center;
     background-color: aliceblue;
     font-family: Sans-serif;
@@ -31,6 +30,26 @@ input[type="submit"]{
     width: 110%;
     color: white;
     border: none;
+}
+
+.page{
+    display: grid;
+    grid-template-rows: min-content min-content;
+}
+
+.input_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%
+}
+
+.error_div{
+    margin-bottom: 0%
+}
+
+.error_div label{
+    font-size: 24px;
+    color: red;
 }
 
 
