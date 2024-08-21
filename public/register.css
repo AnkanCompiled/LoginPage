@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    font-family: Sans-serif;
+}
+
+h2{
+    text-align: left;
+}
+
+div {
+    margin-bottom: 10%;
+}
+
+input {
+    width: 100%;
+    padding: 5%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 110%;
+    color: white;
+    border: none;
+}
+
+
+.register_div {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    padding: 5% 5%;
+    padding-right : 6%;
+    padding-top: 2%;
+    border-radius: 10px;
+}
