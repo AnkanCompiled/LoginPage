@@ -4,7 +4,7 @@ const {MongoClient} = require('mongodb')
 const cors = require('cors')
 
 const PORT = 3000
-const MONGOURL = 'mongodb+srv://ankanb560:miko131988@ankanmongo.grswq.mongodb.net/'
+const MONGOURL = 'mongodb://localhost:27017/'
 const client = new MongoClient(MONGOURL)
 const app = express()
 
@@ -21,7 +21,6 @@ async function connect(Database = 'Projects', Collection = 'LoginDataBase') {
     catch{
         return []
     }
-    return null
 }
 
 app

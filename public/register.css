@@ -13,6 +13,12 @@ div {
     margin-bottom: 10%;
 }
 
+
+label {
+    font-size: 14px;
+    margin-top: 2%;
+}
+
 input {
     width: 100%;
     padding: 5%;
@@ -31,7 +37,7 @@ input[type="submit"]{
 .register_div {
     display: grid;
     justify-content: center;
-    background-color: white;
+    background-color :white;
     padding: 5% 5%;
     padding-right : 6%;
     padding-top: 2%;
