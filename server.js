@@ -25,7 +25,7 @@ async function connect(Database = 'Projects', Collection = 'LoginDataBase') {
 }
 
 app
-    .route('/')
+    .route('/register')
     .get(async(req,res)=>{
         const db = await connect()
         if (db===null){
