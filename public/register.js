@@ -114,7 +114,7 @@ emailInput.addEventListener('keyup', async()=>{
     clearTimeout(emailWriteTimeout)
     emailWriteTimeout = setTimeout(async()=>{
         const fetchData = await getData()
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        const emailRegex = /^[^\s@]+@[^\s@]+\.com+$/
         const email_entered = emailInput.value
         function isValid(){
             if (emailRegex.test(email_entered)){
@@ -209,7 +209,7 @@ passwordInput.addEventListener('keyup',()=>{
 })
 
 submitButtonAction.addEventListener('submit', (e)=>{
-    e.preventDefault()
+    submitButton.style.backgroundColor = 'gray'
     submitButton.disabled = true
     postData(usernameInput.value, emailInput.value, passwordInput.value)
     validateText()
