@@ -1,0 +1,71 @@
+body {
+    background-color: aliceblue;
+    font-family: Sans-serif;
+}
+
+h2{
+    text-align: left;
+}
+
+div {
+    margin-bottom: 10%;
+}
+
+
+label {
+    font-size: 14px;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-color:cadetblue;
+}
+table{
+    width: 100%;
+}
+
+th {
+    background-color: antiquewhite;
+}
+
+input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 420px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.page{
+    display: grid;
+}
+
+.input_div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 0%
+}
+
+.login_div {
+    display: grid;
+    justify-content: center;
+    background-color :white;
+    border-radius: 5%;
+}
+
+.validate_div {
+    display: flex;
+    justify-content: center;
+}
+
+.data_grp {
+    margin-bottom: 0%;
+}

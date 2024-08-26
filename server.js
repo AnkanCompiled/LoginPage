@@ -48,6 +48,18 @@ app
         } 
     })
 
+app
+    .route('/login')
+    .get(async(req,res)=>{
+        const db = await connect()
+        if (db===null){
+            res.status(404).send('Error Connecting MongoDB DataBase')
+        }
+        else{
+            const result = await db.find().toArray()
+            res.json(result)
+        }  
+    })
 
 app.listen(PORT, ()=>{
     console.log(`Server running on localhost:${PORT}`)
